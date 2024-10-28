@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastchestra"
+version = "0.1.0"
+description = "Orchestrator tool for automating testing and database setup"
+authors = ["paquetn <info@nicolaspaquet.com>"]
+license = "MIT Licence"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "0.115.2"  # Main dependency to interact with FastAPI
+typer = "^0.6.1"     # CLI building with Typer
+sqlalchemy = "^2.0.36"  # ORM for DB interactions
+alembic = "^1.11.3"     # For migrations
+pydantic = "2.9.2"     # For input/output validation
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.1"        # Test framework
+pytest-cov = "^4.0.0"    # Code coverage plugin
+black = "^23.3.0"        # Code formatter
+mypy = "^1.4.0"          # Type checker
+isort = "^5.12.0"        # Imports sorting tool
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

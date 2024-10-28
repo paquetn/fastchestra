@@ -1,0 +1,17 @@
+{
+    "test": {
+        "db_name": "test_db_{{timestamp}}",
+        "pytest_command": "pytest",
+        "alembic_command": "alembic"
+    },
+    "dev": {
+        "db_name": "application",
+        "pytest_command": "pytest",
+        "alembic_command": "alembic"
+    },
+    "prod": {
+        "db_name": "prod",
+        "pytest_command": "pytest",
+        "alembic_command": "alembic"
+    }
+}
