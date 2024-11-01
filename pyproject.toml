@@ -6,6 +6,9 @@ authors = ["paquetn <info@nicolaspaquet.com>"]
 license = "MIT Licence"
 readme = "README.md"
 
+[tool.poetry.scripts]
+fastchestra = "fastchestra.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "0.115.2"  # Main dependency to interact with FastAPI
